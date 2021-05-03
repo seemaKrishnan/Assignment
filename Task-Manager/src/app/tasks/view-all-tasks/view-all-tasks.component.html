@@ -1,0 +1,18 @@
+<!-- Show All Tasks -->
+<div class="row">
+    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let task of taskList"> 
+      <div class="card">
+        <div class="card-body" >
+          <span class="card-title">
+            <a class="card-heading" routerLink="view-task/{{task.id}}">{{task?.taskName}}</a>
+          </span>
+          <p class="card-price">{{task.status}}</p>
+          <p class="card-text">{{task.description}}</p>
+          <p class="card-text" *ngIf="">{{isEditable}}</p> 
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Due Date:{{task.dueDate | date: 'dd/MM/yyyy'}}</small>
+        </div>
+      </div>
+    </div>
+  </div>

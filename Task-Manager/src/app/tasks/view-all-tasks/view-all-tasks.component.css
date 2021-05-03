@@ -1,0 +1,15 @@
+.card-title{
+    color:grey;
+}
+.card-price{
+    color:grey;
+    font-size:12px;
+}
+.card-heading{
+    text-decoration: none;
+    color:grey;
+}
+.productStyle{
+    width:100%;
+    height:10%;
+}

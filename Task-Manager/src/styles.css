@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    color:grey;
+    
+}
+
+a,label,input::placeholder,select,textarea,option,select,button{
+    font-size: 12px;
+}

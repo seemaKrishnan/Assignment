@@ -1,0 +1,65 @@
+<!--Task Creation Form using Template driven -->
+<form #createTask="ngForm" class="needs-validation" (ngSubmit)="onFormSubmit(createTask)" novalidate>
+    <div class="form-group">
+      <div class="col-md-6 mb-3">
+        <label for="taskName">Task name</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="taskName" 
+        placeholder="Task name" 
+        [(ngModel)]="taskName"
+        name="taskName" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6 mb-3">
+        <label for="description">Description</label>
+        <input 
+        type="text" 
+        class="form-control" 
+        id="description" 
+        placeholder="Description" 
+        [(ngModel)]="description"
+        name="description" required>  
+      </div>
+      </div>
+      <div class="form-group">
+      <div class="col-md-6 mb-3 form-group">
+        <label for="rating">Status</label>
+        <select class="form-select form-control" 
+        aria-label="Default select example"
+        [(ngModel)]="status" name="status">
+          <option selected>Open this select menu</option>
+          <option value="Open">Open</option>
+          <option value="InProgress">InProgress</option>
+          <option value="Done">Done</option>
+        </select>
+      </div>
+      </div>
+      <div class="form-group">
+      <div class="col-md-6 mb-3">
+        <label for="dueDate">Due Date</label>
+        <input 
+        type="date" 
+        class="form-control" 
+        id="dueDate" 
+        placeholder="Description" 
+        [(ngModel)]="dueDate"
+        name="dueDate" required>
+    </div> 
+    </div>
+    <div class="col-md-6 mb-3">
+    <div class="form-group">
+      <button class="btn btn-secondary" 
+      type="submit"
+      [disabled]="!createTask.valid">Submit form</button>
+    </div>
+  </div>
+  </form>
+  <div class="alert alert-success" 
+  *ngIf="showMsg" role="alert">
+    Task has been created successfully
+  </div>
+  
+  

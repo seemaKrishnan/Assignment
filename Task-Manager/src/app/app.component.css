@@ -1,0 +1,35 @@
+body {
+    padding-top: 56px;
+  }
+  
+  .carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .sidebar-custom{
+    background-color:#92a2b1 !important;
+}
+.list-group-item {
+    color:grey;
+    text-decoration: none;
+}
+.navbar-custom{
+  background-color:#5dc4f5 !important;
+  
+}
+.navbar-custom a{
+color:#fff !important;
+  
+}
+.margin-top{
+  margin-top:.5em
+}

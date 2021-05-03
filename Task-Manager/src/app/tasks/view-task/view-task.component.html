@@ -1,0 +1,16 @@
+<!--View Task-->
+<div class="container">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{taskDetails?.taskName}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <span class="card-text">Task Status: {{taskDetails?.status}}</span>
+    <p class="card-text">Task Due Date:{{taskDetails?.dueDate}}</p>
+  </div>
+  <div class="card-footer">
+    <a *ngIf="isEditable" href="tasks/update-task/{{taskDetails?.id}}" class="btn btn-primary">Update Task</a>
+  </div>
+</div>
+</div>
+
+  

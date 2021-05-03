@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <header>
+    <nav id="navbar-example2" class="navbar navbar-default navbar-custom bg-light">
+     <a href="#" class="nav- active">Task Manager</a>
+  </nav>
+  </header>
+</div>
+<div class="container-fluid">
+
+  <!-- Marketing Icons Section -->
+  <div class="row">
+    <div class="col-lg-3 mb-4">
+      <a [routerLink]="['/']"  class="list-group-item ">View All Tasks</a>
+      <a [routerLink]="['/create-task']" class="list-group-item ">Create a Task</a>
+
+    </div>
+    <div class="col-lg-9 mb-4 margin-top">
+      <router-outlet></router-outlet>
+    </div>
+    </div>
+</div>
+
+
+    
